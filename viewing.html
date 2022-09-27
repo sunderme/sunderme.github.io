@@ -3,17 +3,17 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark">
-<meta property="og:title" content="Welcome to TeXstudio Manual’s documentation!" />
+<meta property="og:title" content="Viewing a document (pdf)" />
   
 <meta property="og:type" content="website" />
   
-<meta property="og:url" content="index.html" />
+<meta property="og:url" content="viewing.html" />
   
-<meta property="og:description" content="Contents:: Getting started- Requirements, Start TeXstudio, Create a first document, Fill in content, Compile, View your pdf document., Editing a TeX document- Creating a new document, Structure you..." />
-  <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Getting started" href="getting_started.html" />
+<meta property="og:description" content="Internal pdf viewer: TeXstudio has an internal (built-in) pdf viewer that lets you view your pdf documents. The viewer can be embedded or window-based (in a separate window). The former uses an are..." />
+  <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Advanced features" href="advanced.html" /><link rel="prev" title="Compiling a document" href="compiling.html" />
 
     <link rel="shortcut icon" href="_static/texstudio.ico"/><meta name="generator" content="sphinx-5.2.1, furo 2022.09.15"/>
-        <title>TeXstudio 4.3.2 documentation</title>
+        <title>Viewing a document (pdf) - TeXstudio 4.3.2 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=9ec31e2665bf879c1d47d93a8ec4893870ee1e45" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
@@ -135,7 +135,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">TeXstudio 4.3.2 documentation</div></a>
+      <a href="index.html"><div class="brand">TeXstudio 4.3.2 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -146,7 +146,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -155,7 +155,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand centered" href="index.html">
   
   <div class="sidebar-logo-container">
     <img class="sidebar-logo" src="_static/texstudio128x128.png" alt="Logo"/>
@@ -170,11 +170,11 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="editing.html">Editing a TeX document</a></li>
 <li class="toctree-l1"><a class="reference internal" href="compiling.html">Compiling a document</a></li>
-<li class="toctree-l1"><a class="reference internal" href="viewing.html">Viewing a document (pdf)</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Viewing a document (pdf)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuring TeXstudio</a></li>
 <li class="toctree-l1"><a class="reference internal" href="background.html">Background information</a></li>
@@ -205,88 +205,109 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <div class="section" id="welcome-to-texstudio-manual-s-documentation">
-<h1>Welcome to TeXstudio Manual’s documentation!<a class="headerlink" href="#welcome-to-texstudio-manual-s-documentation" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting started</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#requirements">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#start-texstudio">Start TeXstudio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#create-a-first-document">Create a first document</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#fill-in-content">Fill in content</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#compile">Compile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="getting_started.html#view-your-pdf-document">View your pdf document</a></li>
+          <div class="section" id="viewing-a-document-pdf">
+<h1>Viewing a document (pdf)<a class="headerlink" href="#viewing-a-document-pdf" title="Permalink to this heading">#</a></h1>
+<!--
+**TODO** internal/external 
+-->
+<div class="section" id="internal-pdf-viewer">
+<h2>Internal pdf viewer<a class="headerlink" href="#internal-pdf-viewer" title="Permalink to this heading">#</a></h2>
+<p>TeXstudio has an internal (built-in) pdf viewer that lets you view your
+pdf documents. The viewer can be embedded or window-based (in a separate
+window). The former uses an area to the right of the editor, the latter
+uses its own window and gives the user more options. The viewer can be
+opened by clicking the View button or by pressing the F7 key.</p>
+<p>You may want to change otions in the config dialog (s. Internal PDF
+Viewer). For forward and inverse searching, scrolling follows cursor,
+and cursor follows scrolling see <a class="reference internal" href="advanced.html#forward-and-inverse-searching"><span class="std std-doc">Forward and Inverse searching</span></a>.</p>
+<div class="section" id="modes-and-mouse-actions">
+<h3>Modes and mouse actions<a class="headerlink" href="#modes-and-mouse-actions" title="Permalink to this heading">#</a></h3>
+<p>You can choose main mode <em>Magnify</em> or <em>Scroll</em> from the toolbar. The
+mouse cursor used is a magnifier glass, or an open hand. These offer
+following actions:</p>
+<p>Magnify mode only</p>
+<ul class="simple">
+<li><p>left mouse button click opens magnifier showing enlarged part of the
+text, or follows a link</p></li>
+<li><p>Shift + left mouse button click increases zoom level</p></li>
+<li><p>Alt + left mouse button click decreases zoom level</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="editing.html">Editing a TeX document</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#creating-a-new-document">Creating a new document</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#structure-your-document">Structure your document</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#browsing-your-document">Browsing your document</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#formatting-your-text">Formatting your text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#spacings">Spacings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#inserting-a-list">Inserting a list</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#inserting-a-table">Inserting a table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#inserting-a-tabbing-environment">Inserting a “tabbing” environment</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#inserting-a-picture">Inserting a picture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#cross-references-and-notes">Cross References and notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#inserting-math-formula">Inserting math formula</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#auto-completion">Auto Completion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#thesaurus">Thesaurus</a></li>
-<li class="toctree-l2"><a class="reference internal" href="editing.html#special-commands">Special Commands</a></li>
+<p>Scroll mode only</p>
+<ul class="simple">
+<li><p>left mouse button click grabs the document so you can scroll it
+around, or follows a link</p></li>
+<li><p>double left mouse button click opens magnifier showing enlarged part
+of the text</p></li>
+<li><p>Shift + left mouse button click sets grid page offset (s. <a class="reference internal" href="#changing-the-grid-page-offset"><span class="std std-doc">Special features</span></a>)</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="compiling.html">Compiling a document</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="compiling.html#compiling">Compiling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="compiling.html#the-log-files">The log files</a></li>
+<p>Magnify and Scroll mode</p>
+<ul class="simple">
+<li><p>Ctrl + left mouse button click jumps to the source (inverse search)</p></li>
+<li><p>Ctrl + Shift + left mouse button click copies coordinates to
+clipboard (s. <a class="reference internal" href="#copy-page-coordinates-to-the-clipboard"><span class="std std-doc">Special features</span></a>)</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="viewing.html">Viewing a document (pdf)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="viewing.html#internal-pdf-viewer">Internal pdf viewer</a></li>
+<p>Remarks:</p>
+<ul class="simple">
+<li><p>All actions above are available for the embedded pdf viewer. Even so
+changing grid page offset is not applicable, since embedded pdf
+viewer always uses a grid with one column.</p></li>
+<li><p>When you set option Presentation (menu View, or key F5), the
+windowed pdf viewer only uses left and right mouse button click to
+scroll pages forth and back, and pressing the mouse wheel button
+changes the cursor into a red laser dot.</p></li>
+<li><p>With option Full Screen set (menu View, or key Ctrl+Shift+F) the
+windowed pdf viewer’s behaviour is that of Scroll Mode.</p></li>
+<li><p>The mouse cursor hot spot of the magnifier glass lies in the center
+of the glass, that of the open hand is marked with a small cross
+outside the hand. This may help improve accuracy of inverse search.</p></li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="advanced.html">Advanced features</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#user-fold-marker">User Fold Marker</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#syntax-check">Syntax Check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#bibliography">Bibliography</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#svn-support">SVN Support</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#using-table-templates">Using table templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#personal-macros">Personal macros</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#the-convert-to-html-command">The “Convert to Html” command</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#forward-and-inverse-searching">Forward and Inverse searching</a></li>
-<li class="toctree-l2"><a class="reference internal" href="advanced.html#advanced-header-usage">Advanced header usage</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuring TeXstudio</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#adapting-the-main-gui">Adapting the main GUI</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-editor">Configuring the editor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-latex-related-commands">Configuring the latex related commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-build-system">Configuring the build system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-some-general-issues">Configuring some general issues</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-autocompletion">Configuring the autocompletion</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-shortcuts">Configuring shortcuts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-latex-math-menu-advanced-option">Configuring the Latex/Math-Menu (Advanced option)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-the-custom-toolbar-advanced-option">Configuring the Custom Toolbar (Advanced option)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="configuration.html#configuring-svn-support">Configuring SVN support</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="background.html">Background information</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="background.html#about-documents-separated-in-several-files">About documents separated in several files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#overview-of-texstudio-command-line-options">Overview of TeXstudio command-line options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#description-of-the-cwl-format">Description of the cwl format</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#the-document-template-format">The Document Template Format</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#creating-table-templates">Creating table templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#style-sheets">Style Sheets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="background.html#writing-your-own-language-definitions">Writing your own language definitions</a></li>
-</ul>
-</li>
-</ul>
+</div>
+<div class="section" id="special-features">
+<h3>Special features<a class="headerlink" href="#special-features" title="Permalink to this heading">#</a></h3>
+<div class="section" id="changing-the-grid-page-offset">
+<h4>Changing the grid page offset<a class="headerlink" href="#changing-the-grid-page-offset" title="Permalink to this heading">#</a></h4>
+<p>The windowed pdf viewer arranges the pages in a customizable grid of
+columns and rows (s. menu View/Grid) in which the pages are placed. The
+first page may be placed on the left in the first row (i.e. a grid page
+offset of 0) and the following pages fill the row and so on:</p>
+<p><img alt="grid 4x2 (4 columns, 2 rows), first page in first column of first row" src="_images/grid4x2_book_col1.png" /></p>
+<p>A grid page offset of 0 may not be suitable in all cases. For example,
+if you are working on a book, since books have odd pages on the right.
+The first page of the document shown in the previous image should be
+positioned in the second or forth column (i.e. a grid page offset of 1
+or 3). Thus each grid row starts with an even (left) page and ends with
+an odd (right) page (if appropriate):</p>
+<p><img alt="grid 4x2, first page in second column, the space on the left side remains empty" src="_images/grid4x2_book_col2.png" /></p>
+<p>To meet this requirement, you can manually change the offset for the
+first page in any grid. To do this, use Shift + left mouse button click
+on any place of the grid while in Scroll mode. The first page will be
+moved to the place that is in the first row and in the same column as
+the place you selected with the mouse. You may frequently use grid 2x1
+with 2 columns to view books. In this case, for the sake of simplicity,
+the first page is automatically shifted to the right (i.e. an offset of
+1 is set).</p>
+<p>Hint: When option Single Page Step (menu View/Grid) is set, a manually
+set grid page offset gets ignored.</p>
+</div>
+<div class="section" id="copy-page-coordinates-to-the-clipboard">
+<h4>Copy page coordinates to the clipboard<a class="headerlink" href="#copy-page-coordinates-to-the-clipboard" title="Permalink to this heading">#</a></h4>
+<p>You can also use the pdf viewer to get the x and y coordinates of a
+point on a page by performing Ctrl + Shift + left mouse button click
+(the mouse cursor changes to a cross) at that point. By doing so, the x
+and y coordinates of the mouse position (in centimeters) with respect to
+the bottom left corner of the current page are copied into your
+clipboard.</p>
+<p>Example for x, y copied to clipboard: 10.16, 12.8372</p>
+<p>This becomes particularly useful when adjusting margins or working with
+TikZ.</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -295,16 +316,26 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="getting_started.html">
+          <a class="next-page" href="advanced.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">Getting started</div>
+                <div class="title">Advanced features</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="compiling.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Compiling a document</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -325,8 +356,35 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Viewing a document (pdf)</a><ul>
+<li><a class="reference internal" href="#internal-pdf-viewer">Internal pdf viewer</a><ul>
+<li><a class="reference internal" href="#modes-and-mouse-actions">Modes and mouse actions</a></li>
+<li><a class="reference internal" href="#special-features">Special features</a><ul>
+<li><a class="reference internal" href="#changing-the-grid-page-offset">Changing the grid page offset</a></li>
+<li><a class="reference internal" href="#copy-page-coordinates-to-the-clipboard">Copy page coordinates to the clipboard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>
