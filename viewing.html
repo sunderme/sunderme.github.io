@@ -223,9 +223,36 @@ pdf documents. The viewer can be embedded or window-based (in a separate
 window). The former uses an area to the right of the editor, the latter
 uses its own window and gives the user more options. The viewer can be
 opened by clicking the View button or by pressing the F7 key.</p>
+<div class="section" id="forward-and-inverse-searching">
+<h3>Forward and Inverse searching<a class="headerlink" href="#forward-and-inverse-searching" title="Permalink to this heading">#</a></h3>
+<p>In this section you will not learn how to find a specific text, as you
+know it from other editors. Searching is different: If you see something
+in your pdf document that you want to change, then you need to figure
+out where to change your LaTeX document in the editor (inverse search).
+Or you want to figure out where your changed text will be displayed in
+the pdf (forward search).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure that synctex is activated in the pdflatex command (option -synctex=1
+needs to be added), though TeXstudio will ask you if it can correct the
+command itself if it is not set correctly.</p>
+</div>
+<p>Forward search is automatically done every time the pdf-viewer is
+opened. TeXstudio will jump to the position where your cursor is
+currently positioned. Additionally you can use CTRL+left mouse button
+click on a word in the text editor to jump to the pdf or use the context
+menu and select “Go To PDF”.</p>
+<p>Inverse search can be activated by clicking in the pdf with CTRL+left
+mouse button or by selecting “jump to source” in the context menu,
+which is activated with a right mouse button click.</p>
+<p>Furthermore it is possible to enable “Scrolling follows Cursor” in
+pdf-viewer/configure. This will keep the pdf-viewer position synchronous
+to your cursor opposition in the editor. Likewise “Cursor follows
+Scrolling” keeps the editor position synchronous to pdf-viewer
+position.</p>
 <p>You may want to change otions in the config dialog (s. Internal PDF
-Viewer). For forward and inverse searching, scrolling follows cursor,
-and cursor follows scrolling see <a class="reference internal" href="advanced.html#forward-and-inverse-searching"><span class="std std-doc">Forward and Inverse searching</span></a>.</p>
+Viewer).</p>
+</div>
 <div class="section" id="modes-and-mouse-actions">
 <h3>Modes and mouse actions<a class="headerlink" href="#modes-and-mouse-actions" title="Permalink to this heading">#</a></h3>
 <p>You can choose main mode <em>Magnify</em> or <em>Scroll</em> from the toolbar. The
@@ -370,6 +397,7 @@ TikZ.</p>
             <ul>
 <li><a class="reference internal" href="#">Viewing a document (pdf)</a><ul>
 <li><a class="reference internal" href="#internal-pdf-viewer">Internal pdf viewer</a><ul>
+<li><a class="reference internal" href="#forward-and-inverse-searching">Forward and Inverse searching</a></li>
 <li><a class="reference internal" href="#modes-and-mouse-actions">Modes and mouse actions</a></li>
 <li><a class="reference internal" href="#special-features">Special features</a><ul>
 <li><a class="reference internal" href="#changing-the-grid-page-offset">Changing the grid page offset</a></li>
